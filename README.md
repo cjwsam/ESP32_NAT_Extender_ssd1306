@@ -52,3 +52,7 @@ Line editing and history features are disabled.
 On Windows, try using Putty instead.
 esp32>
 ```
+booting:
+- title: example of said code 
+  description: showing off 
+  video: 
