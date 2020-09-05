@@ -52,4 +52,4 @@ Line editing and history features are disabled.
 On Windows, try using Putty instead.
 esp32>
 ```
-[![Alt text for your video](doc/gifName.gif)](https://www.youtube.com/watch?v=0Z27zeoPMCY)
+[![Video Example](doc/gifName.gif)](https://www.youtube.com/watch?v=0Z27zeoPMCY)
