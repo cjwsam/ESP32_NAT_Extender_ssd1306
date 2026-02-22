@@ -87,7 +87,7 @@ esp_err_t get_config_param_str(char* name, char** param)
     return ESP_OK;
 }
 
-esp_err_t get_config_param_int(char* name, int* param)
+esp_err_t get_config_param_int(char* name, int32_t* param)
 {
     nvs_handle_t nvs;
 

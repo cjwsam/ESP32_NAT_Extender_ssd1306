@@ -131,8 +131,9 @@ httpd_handle_t start_webserver(void)
     httpd_config_t config = HTTPD_DEFAULT_CONFIG();
 
     const char *config_page_template = CONFIG_PAGE;
-    char *config_page = malloc(strlen(config_page_template)+512);
-    sprintf(config_page, config_page_template, ssid, passwd, ap_ssid, ap_passwd);
+    size_t config_page_size = strlen(config_page_template) + 512;
+    char *config_page = malloc(config_page_size);
+    snprintf(config_page, config_page_size, config_page_template, ssid, passwd, ap_ssid, ap_passwd);
     indexp.user_ctx = config_page;
 
     esp_timer_create(&restart_timer_args, &restart_timer);
